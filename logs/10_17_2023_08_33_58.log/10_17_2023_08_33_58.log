@@ -1,0 +1,9 @@
+[2023-10-17 08:33:59,292] 22 root - INFO - entered data ingestion method
+[2023-10-17 08:33:59,436] 27 root - INFO - read the dataset as dataframe
+[2023-10-17 08:34:00,017] 36 root - INFO - train test split initiated
+[2023-10-17 08:34:00,616] 44 root - INFO - ingestion of data completed
+[2023-10-17 08:34:00,770] 73 root - INFO - read train and test data
+[2023-10-17 08:34:00,770] 75 root - INFO - obtaining preprocessor obj
+[2023-10-17 08:34:00,770] 51 root - INFO - categorical columns: ['roomtype', 'cancellationpolicy', 'smartlocation']
+[2023-10-17 08:34:00,770] 52 root - INFO - numerical columns: ['availability365', 'reviewscoresrating', 'minimumnights', 'numberofreviews']
+[2023-10-17 08:34:00,778] 85 root - INFO - applying transformations
