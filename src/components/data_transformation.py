@@ -87,15 +87,17 @@ class DataTransformation:
             input_feature_train_array = preprocessor_obj.fit_transform(input_feature_train_df)
             input_feature_test_array = preprocessor_obj.transform(input_feature_test_df)
 
-
+            logging.info(f'shape of train: {input_feature_train_array.shape} shape of y train: {target_feature_train_df.shape}')
+            
+            
             ## combine feature arr and target
-            train_arr = np.c_[
-                input_feature_train_array, np.array(target_feature_train_df)
-            ]
+            # train_arr = np.c_[
+            #     np.array(input_feature_train_array), (target_feature_train_df)
+            # ]
 
-            test_arr = np.c_[
-                input_feature_test_array, np.array(target_feature_test_df)
-            ]
+            # test_arr = np.c_[
+            #     input_feature_test_array, (target_feature_test_df)
+            # ]
 
 
             save_object(
@@ -106,8 +108,10 @@ class DataTransformation:
             logging.info(f"saved preprocessor")
 
             return (
-                train_arr,
-                test_arr,
+                input_feature_train_array,
+                target_feature_train_df,
+                input_feature_test_array,
+                target_feature_test_df,
                 self.data_transformation_config.preprocessor_ob_file_path
             )
 

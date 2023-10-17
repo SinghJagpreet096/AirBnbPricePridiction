@@ -1,0 +1,21 @@
+[2023-10-17 08:53:47,753] 22 root - INFO - entered data ingestion method
+[2023-10-17 08:53:47,901] 27 root - INFO - read the dataset as dataframe
+[2023-10-17 08:53:48,490] 36 root - INFO - train test split initiated
+[2023-10-17 08:53:49,100] 44 root - INFO - ingestion of data completed
+[2023-10-17 08:53:49,257] 73 root - INFO - read train and test data
+[2023-10-17 08:53:49,257] 75 root - INFO - obtaining preprocessor obj
+[2023-10-17 08:53:49,257] 51 root - INFO - categorical columns: ['roomtype', 'cancellationpolicy', 'smartlocation']
+[2023-10-17 08:53:49,257] 52 root - INFO - numerical columns: ['availability365', 'reviewscoresrating', 'minimumnights', 'numberofreviews']
+[2023-10-17 08:53:49,264] 85 root - INFO - applying transformations
+[2023-10-17 08:53:49,600] 90 root - INFO - shape of train: (259029, 3856) shape of y train: (259029,)
+[2023-10-17 08:53:49,601] 108 root - INFO - saved preprocessor
+[2023-10-17 08:53:49,605] 32 root - INFO - spliting train and test input and target
+[2023-10-17 08:53:49,605] 54 root - INFO - training models
+[2023-10-17 08:53:49,606] 27 root - INFO - training started
+[2023-10-17 08:53:51,159] 27 root - INFO - training started
+[2023-10-17 08:53:52,083] 27 root - INFO - training started
+[2023-10-17 08:53:57,929] 27 root - INFO - training started
+[2023-10-17 08:54:40,766] 27 root - INFO - training started
+[2023-10-17 09:40:56,247] 27 root - INFO - training started
+[2023-10-17 09:41:07,203] 27 root - INFO - training started
+[2023-10-17 09:41:08,054] 64 root - INFO - model trained
