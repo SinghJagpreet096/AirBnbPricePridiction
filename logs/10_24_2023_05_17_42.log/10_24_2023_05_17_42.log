@@ -1,0 +1,4 @@
+[2023-10-24 05:17:42,491] 96 werkzeug - WARNING -  * Debugger is active!
+[2023-10-24 05:17:42,499] 96 werkzeug - INFO -  * Debugger PIN: 116-732-477
+[2023-10-24 05:18:05,362] 96 werkzeug - INFO - 127.0.0.1 - - [24/Oct/2023 05:18:05] "GET / HTTP/1.1" 200 -
+[2023-10-24 05:18:09,242] 96 werkzeug - INFO - 127.0.0.1 - - [24/Oct/2023 05:18:09] "GET / HTTP/1.1" 200 -
