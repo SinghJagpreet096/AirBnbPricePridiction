@@ -1,0 +1,12 @@
+[2023-10-27 03:58:43,362] 96 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.23.121:5000
+[2023-10-27 03:58:43,362] 96 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-10-27 03:58:43,363] 96 werkzeug - INFO -  * Restarting with stat
+[2023-10-27 03:58:43,981] 96 werkzeug - WARNING -  * Debugger is active!
+[2023-10-27 03:58:43,986] 96 werkzeug - INFO -  * Debugger PIN: 116-732-477
+[2023-10-27 03:58:47,912] 96 werkzeug - INFO - 127.0.0.1 - - [27/Oct/2023 03:58:47] "GET / HTTP/1.1" 200 -
+[2023-10-27 03:59:58,009] 96 werkzeug - INFO -  * Detected change in '/Users/jagpreetsingh/ML_Projects/airbnbpriceprediction/application.py', reloading
+[2023-10-27 03:59:58,093] 96 werkzeug - INFO -  * Restarting with stat
+[2023-10-27 04:01:16,802] 96 werkzeug - INFO -  * Restarting with stat

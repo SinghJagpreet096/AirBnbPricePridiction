@@ -1,0 +1,3 @@
+[2023-10-27 04:12:50,594] 96 werkzeug - WARNING -  * Debugger is active!
+[2023-10-27 04:12:50,601] 96 werkzeug - INFO -  * Debugger PIN: 116-732-477
+[2023-10-27 04:12:54,765] 96 werkzeug - INFO -  * Detected change in '/Users/jagpreetsingh/ML_Projects/airbnbpriceprediction/application.py', reloading

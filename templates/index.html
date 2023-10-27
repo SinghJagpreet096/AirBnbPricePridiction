@@ -1,64 +1,53 @@
-<h1>Welcome</h1>
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Air BnB Price Prediction</title>
 </head>
 <body>
-    <h1>Enter Details</h1>
-    
-    <form>
+    <h1>Welcome</h1>
+    <h2>Enter Details</h2>
+
+    <form action="/predict" method="post">
         <label for="city">Choose a city:</label>
-        <select id="city" name="city" placeholder="city">
+        <select id="city" name="city" required>
             {% for city in cities %}
                 <option value="{{ city }}">{{ city }}</option>
             {% endfor %}
-        </select>
-        <br>
-    </form>
-    <form>
-        <label for="cancellationpolicy">Cancelation Policy</label>
-        <select id="cancellationpolicy" name="cancellationpolicy" placeholder="Cancelation Policy">
+        </select><br>
+
+        <label for="cancellationpolicy">Cancellation Policy:</label>
+        <select id="cancellationpolicy" name="cancellationpolicy" required>
             {% for policy in cancellationpolicy %}
                 <option value="{{ policy }}">{{ policy }}</option>
             {% endfor %}
-        </select>
-    </form>
-    <form>
-        <label for="roomtype">Room Type</label>
-        <select id="roomtype" name="roomtype" placeholder="Room Type">
+        </select><br>
+
+        <label for="roomtype">Room Type:</label>
+        <select id="roomtype" name="roomtype" required>
             {% for room in roomtype %}
                 <option value="{{ room }}">{{ room }}</option>
             {% endfor %}
-        </select>
-        
-    </form>
-    <form>
-        <label for="minimumnights">Minimum Nights</label>
-        <input id="minimumnights" type="number" name="minimumnights"
-            placeholder="Minimum Nights" min='0' max='20' />
-    </form>
-    <form>
-        <label for="availability365">Availabilty 365</label>
-        <input id="availability365" type="number" name="minimumnights"
-            placeholder="Availabilty 365" min='0' max='365' />
-    </form>
-    <form>
-        <label for="numberofreviews">Number of Review</label>
-        <input id="numberofreviews" type="number" name="numberofreviews"
-            placeholder="Number of Review" min='0' />
-    </form>
-    <form>
-        <label for="reviewscoresrating">Review Score Rating</label>
-        <input id="reviewscoresrating" type="number" name="reviewscoresrating"
-            placeholder="Review Score Rating" min='0' max="100"/>
-    </form>
-    
-    <br>
+        </select><br>
+
+        <label for="minimumnights">Minimum Nights:</label>
+        <input id="minimumnights" type="number" name="minimumnights" required
+            placeholder="Minimum Nights" min="0" max="20" /><br>
+
+        <label for="availability365">Availability 365:</label>
+        <input id="availability365" type="number" name="availability365" required
+            placeholder="Availability 365" min="0" max="365" /><br>
+
+        <label for="numberofreviews">Number of Reviews:</label>
+        <input id="numberofreviews" type="number" name="numberofreviews" required
+            placeholder="Number of Reviews" min="0" /><br>
+
+        <label for="reviewscoresrating">Review Score Rating:</label>
+        <input id="reviewscoresrating" type="number" name="reviewscoresrating" required
+            placeholder="Review Score Rating" min="0" max="100" /><br>
+
         <input type="submit" value="Submit">
-    <h2>
-        The Estimated Price is : {{results}}
-    </h2>
+    </form>
+
+    <h2>The Estimated Price is: ${{ results }}</h2>
 </body>
 </html>
