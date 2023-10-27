@@ -2,13 +2,32 @@
 <html>
 <head>
     <title>Air BnB Price Prediction</title>
+
+    <style>
+        body {
+            background-color: #6376b1; /* Background color */
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            height: 100vh; /* Make the page fill the entire viewport height */
+            margin: 0; /* Remove default margin */
+        }
+
+        .container {
+            background-color: #e1e1eb; /* Container background color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow to the container */
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <h2>Enter Details</h2>
+    <div class="container">
+        <h1>Air BnB Price Prediction</h1>
+        <h2>Enter Your Details</h2>
 
-    <form action="/predict" method="post">
-        <label for="city">Choose a city:</label>
+        <form action="/predict" method="post">
+            <label for="city">Choose a city:</label>
         <select id="city" name="city" required>
             {% for city in cities %}
                 <option value="{{ city }}">{{ city }}</option>
@@ -46,8 +65,10 @@
             placeholder="Review Score Rating" min="0" max="100" /><br>
 
         <input type="submit" value="Submit">
-    </form>
+        
+        </form>
 
-    <h2>The Estimated Price is: ${{ results }}</h2>
+        <h2>The Estimated Price is: ${{ results }}</h2>
+    </div>
 </body>
 </html>
