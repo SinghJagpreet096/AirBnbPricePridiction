@@ -41,7 +41,7 @@ def predict_datapoint():
         predict_pipeline = PredictPipeline()
         results  = predict_pipeline.predict(pred_df)
         print(results)
-        return render_template('index.html',results=results[0])
+        return render_template('index.html',results=round(results[0],2))
     except Exception as e:
         raise CustomException(e, sys)
     
