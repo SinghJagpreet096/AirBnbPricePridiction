@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Air BnB Price Prediction</title>
+
+    <style>
+        body {
+            background-color: #6376b1; /* Background color */
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            height: 100vh; /* Make the page fill the entire viewport height */
+            margin: 0; /* Remove default margin */
+        }
+
+        .container {
+            background-color: #e1e1eb; /* Container background color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow to the container */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Air BnB Price Prediction</h1>
+        <h2>Enter Your Details</h2>
+
+        <form action="/predict" method="post">
+            <label for="city">Choose a city:</label>
+        <select id="city" name="city" required>
+            {% for city in cities %}
+                <option value="{{ city }}">{{ city }}</option>
+            {% endfor %}
+        </select><br>
+
+        <label for="cancellationpolicy">Cancellation Policy:</label>
+        <select id="cancellationpolicy" name="cancellationpolicy" required>
+            {% for policy in cancellationpolicy %}
+                <option value="{{ policy }}">{{ policy }}</option>
+            {% endfor %}
+        </select><br>
+
+        <label for="roomtype">Room Type:</label>
+        <select id="roomtype" name="roomtype" required>
+            {% for room in roomtype %}
+                <option value="{{ room }}">{{ room }}</option>
+            {% endfor %}
+        </select><br>
+
+        <label for="minimumnights">Minimum Nights:</label>
+        <input id="minimumnights" type="number" name="minimumnights" required
+            placeholder="Minimum Nights" min="0" max="20" /><br>
+
+        <label for="availability365">Availability 365:</label>
+        <input id="availability365" type="number" name="availability365" required
+            placeholder="Availability 365" min="0" max="365" /><br>
+
+        <label for="numberofreviews">Number of Reviews:</label>
+        <input id="numberofreviews" type="number" name="numberofreviews" required
+            placeholder="Number of Reviews" min="0" /><br>
+
+        <label for="reviewscoresrating">Review Score Rating:</label>
+        <input id="reviewscoresrating" type="number" name="reviewscoresrating" required
+            placeholder="Review Score Rating" min="0" max="100" /><br>
+
+        <input type="submit" value="Submit">
+        
+        </form>
+
+        <h2>The Estimated Price is: ${{ results }}</h2>
+    </div>
+</body>
+</html>
