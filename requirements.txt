@@ -1,4 +1,4 @@
--e git+https://github.com/SinghJagpreet096/AirBnbPricePridiction.git@b362565dc5d70ac2f8014238276c459b7269835a#egg=airbnbpriceprediction
+-e .
 appnope==0.1.3
 asttokens==2.4.0
 backcall==0.2.0
