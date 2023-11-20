@@ -1,4 +1,7 @@
 venv/
 notebook/airbnb-listings.csv
 notebook/train.csv
-artifacts/
+artifacts/data.csv
+artifacts/test.csv
+artifacts/train.csv
+logs/
