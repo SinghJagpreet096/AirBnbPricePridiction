@@ -21,12 +21,7 @@ def index():
 @application.route('/predict',methods=['POST'])
 def predict_datapoint():
     try:
-        # print("get")
-        # if request.method == 'GET':
-        #     return render_template('index.html',cities=cities,
-        #                     cancellationpolicy=cancellationpolicy,
-        #                     roomtype=roomtype)
-        # else:
+        
         print('post')
         data = CustomData(smartlocation=request.form.get('city'),
                         roomtype=request.form.get('roomtype'),
@@ -45,16 +40,6 @@ def predict_datapoint():
     except Exception as e:
         raise CustomException(e, sys)
     
-
-# @application.route('/predict',methods=['GET','POST'])
-# def predict_price():
-#     try:
-#         if request.method=='GET':
-#             return render_template()
-#     except Exception as e:
-#         raise CustomException(e, sys)
-
-
 
 if __name__ == "__main__":
     application.run(host='0.0.0.0')
