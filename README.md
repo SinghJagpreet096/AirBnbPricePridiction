@@ -5,7 +5,11 @@ The project demonstrates a comprehensive solution to predict Airbnb rental price
 ## Video
 
 
-https://github.com/SinghJagpreet096/airbnbpriceprediction/assets/104114729/efdcd4ea-a106-49de-9121-3d65086b4ca5
+
+
+https://github.com/SinghJagpreet096/airbnbpriceprediction/assets/104114729/d87e3077-b005-46cb-920e-e796973da211
+
+
 
 
 
