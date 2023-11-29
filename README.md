@@ -28,7 +28,7 @@ The project demostrates a comprehensive solution to predict Airbnb rental prices
 2. (Optional) Create and activate a virtual environment:
 
     ```bash
-    Copy code
+    
     python3 -m venv venv
     source venv/bin/activate
     ```
@@ -36,7 +36,7 @@ The project demostrates a comprehensive solution to predict Airbnb rental prices
 3. Install the required dependencies from requirements.txt:
 
     ```bash
-    Copy code
+    
     pip install -r requirements.txt
     ```
 
@@ -45,7 +45,7 @@ The project demostrates a comprehensive solution to predict Airbnb rental prices
 1. Start the Flask application:
 
 ```bash
-Copy code
+
 python application.py
 ```
 
