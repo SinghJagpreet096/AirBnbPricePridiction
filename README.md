@@ -1,12 +1,19 @@
 # AirBnb Price Prediction with MLOPs
 
-The project demostrates a comprehensive solution to predict Airbnb rental prices, helping hosts and travelers make informed decisions in the dynamic and competitive short-term rental market. The project uses the capabilities of Machine Learning and Machine Learning Operations(MLOPs) for deployment, and performs online Predictions using Rest API. The project is build upon Python 3.10, Flask and Scikit-Learn.
+The project demonstrates a comprehensive solution to predict Airbnb rental prices, helping hosts and travelers make informed decisions in the dynamic and competitive short-term rental market. The project uses the capabilities of Machine Learning and Machine Learning Operations(MLOPs) for deployment and performs online Predictions using Rest API. The project is built upon Python 3.10, Flask, and Scikit-Learn.
+
+## Video
+
+
+https://github.com/SinghJagpreet096/airbnbpriceprediction/assets/104114729/efdcd4ea-a106-49de-9121-3d65086b4ca5
+
+
 
 ## Features
 
-- Take User Input from Web interface (Rest API).
+- Take User Input from the Web interface (Rest API).
 - Performs preprocessing on the raw data through data pipelines.
-- Pass the processed data to ML model for Prediction.
+- Pass the processed data to the ML model for Prediction.
 - Display the Predictions to the User on the Web page.
 
 ## Getting Started
@@ -28,7 +35,6 @@ The project demostrates a comprehensive solution to predict Airbnb rental prices
 2. (Optional) Create and activate a virtual environment:
 
     ```bash
-    Copy code
     python3 -m venv venv
     source venv/bin/activate
     ```
@@ -36,7 +42,6 @@ The project demostrates a comprehensive solution to predict Airbnb rental prices
 3. Install the required dependencies from requirements.txt:
 
     ```bash
-    Copy code
     pip install -r requirements.txt
     ```
 
@@ -45,16 +50,15 @@ The project demostrates a comprehensive solution to predict Airbnb rental prices
 1. Start the Flask application:
 
 ```bash
-Copy code
 python application.py
 ```
 
 2. Open your web browser and navigate to http://127.0.0.1:5000 to access the web interface.
 
-3. Enter details in Web interface to get the Predictions.
+3. Enter details in the Web interface to get the Predictions.
 
 ### Usage
-- Enter details in the Given drop down and text fields.
+- Enter details in the Given drop-down and text fields.
 - Click the Submit button to get the prediction.
 
 ### Contributing
