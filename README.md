@@ -1,4 +1,3 @@
 ## AirBnb Price Prediction
 
-## video
 
